@@ -1,10 +1,12 @@
-import java.util.ArrayList; 
+﻿import java.util.ArrayList;  
 import java.util.HashMap;
 import java.util.Scanner;
 
 /**
  * B0544120.游佳容 
- * Try to write some comments for your codes (methods, 15 points)
+ * 先輸入及儲存這場遊戲設定為幾副牌
+ * 再來設定Deck的3個for loop
+ * 接著為card這個class(methods, 15 points)
  */
 public class HW2 {
 
@@ -25,7 +27,6 @@ public class HW2 {
 	}
 
 	private static boolean isAllCardsCorrect(ArrayList<Card> allCards, int nDeck) {
-		// check the output
 		boolean isCorrect = true;
 		;
 		HashMap<String, Integer> checkHash = new HashMap<String, Integer>();
@@ -59,7 +60,8 @@ public class HW2 {
 }
 
 /**
- * Description: TODO: please add description here
+ * Description: 三個for loop 從第一副牌開始進入，再來為第一種花色接著從A~K
+ * 結束後再回到第二種花色一樣A~K，依序下去。
  */
 class Deck {
 	private ArrayList<Card> cards;
@@ -88,7 +90,7 @@ class Deck {
 }
 
 /**
- * Description: TODO: please add description here
+ * Description: 列出花色及數字陣列，並回傳輸出。
  */
 class Card {
 	private int suit;
