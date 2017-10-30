@@ -28,7 +28,6 @@ public class HW2 {
 
 	private static boolean isAllCardsCorrect(ArrayList<Card> allCards, int nDeck) {
 		boolean isCorrect = true;
-		;
 		HashMap<String, Integer> checkHash = new HashMap<String, Integer>();
 		for (Card card : allCards) {
 			int suit = card.getSuit();
